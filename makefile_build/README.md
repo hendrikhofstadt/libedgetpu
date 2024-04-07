@@ -10,7 +10,7 @@ sudo apt install libabsl-dev libflatbuffers-dev
 Next, you'll need to clone the [Tensorflow Repo](https://github.com/tensorflow/tensorflow) at the desired checkout (using TF head isn't advised). If you are planning to use libcoral or pycoral libraries, this should match the ones in those repos' WORKSPACE files. For example, if you are using TF2.5, we can check that [tag in the TF Repo](https://github.com/tensorflow/tensorflow/commit/a4dfb8d1a71385bd6d122e4f27f86dcebb96712d) and then checkout that address:
 ```
 git clone https://github.com/tensorflow/tensorflow
-git checkout a4dfb8d1a71385bd6d122e4f27f86dcebb96712d -b tf2.5
+git checkout v2.6.1
 ```
 
 To build the library:
