@@ -139,8 +139,7 @@ LIBEDGETPU_CCSRCS := \
 	$(BUILDROOT)/tflite/edgetpu_delegate_for_custom_op.cc \
 	$(BUILDROOT)/tflite/edgetpu_delegate_for_custom_op_tflite_plugin.cc \
 	$(TFROOT)/tensorflow/lite/core/c/common.cc \
-	$(TFROOT)/tensorflow/lite/util.cc \
-	$(TFROOT)/tensorflow/lite/array.cc
+	$(TFROOT)/tensorflow/lite/util.cc
 LIBEDGETPU_CCOBJS := $(call TOBUILDDIR,$(patsubst %.cc,%.o,$(LIBEDGETPU_CCSRCS)))
 
 # In order to support direct and throttled mode - we need to compile two files
